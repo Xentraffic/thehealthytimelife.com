@@ -1,0 +1,158 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get any lander cleaned, visit thelanders.club -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FEBO Chat</title>
+  <link rel="shortcut icon" href="loadingCartoon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1 class="feb">Final Expense Benefits <span>©</span></h1>
+  <!--Navbar-->
+  <section class="nav">
+    <a href="tel:+1234567890" class="callButton">
+      <p class="text">Need support?</p>
+      <p class="number">
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
+          <path
+            d="M12.9399 13.4272L13.4716 12.8154C13.81 12.4765 14 12.0176 14 11.5391C14 11.0606 13.81 10.6016 13.4716 10.2627C13.4535 10.2447 12.0478 9.16514 12.0478 9.16514C11.7104 8.84457 11.2623 8.66606 10.7965 8.66672C10.3307 8.66737 9.8831 8.84712 9.54663 9.16864L8.43306 10.1053C7.52408 9.72974 6.69837 9.17865 6.00336 8.48367C5.30834 7.78869 4.75771 6.9635 4.38308 6.05548L5.31787 4.94739C5.64021 4.61156 5.8205 4.16466 5.82126 3.69956C5.82202 3.23447 5.6432 2.78698 5.32196 2.4501C5.32196 2.4501 4.23936 1.04866 4.22125 1.03058C3.88791 0.69567 3.43595 0.505122 2.96303 0.500102C2.49011 0.495082 2.0342 0.675994 1.69381 1.00375L1.02192 1.58696C-2.94743 6.18379 5.60006 14.6502 10.357 14.498C10.8373 14.5008 11.3134 14.4074 11.757 14.2235C12.2006 14.0396 12.6029 13.7689 12.9399 13.4272Z"
+            fill="#4B4B4B"></path>
+        </svg> 1 (234) 456-7890
+      </p>
+    </a>
+  </section>
+  <!-- Loading Section 1-->
+  <section id="section1" class="section1">
+    <div class="green"></div>
+    <div class="centeredDiv">
+      <img src="load.gif" style="display: block; max-width: 70px; margin: 20px auto;" />
+      <p class="loadMessage">Loading trusted benefits for you...</p>
+      <img src="logos.png" alt="Trustpilot 4.8/5 rating and BBB A rating" width="375" height="41" />
+    </div>
+    <div class="loadingFooter"></div>
+  </section>
+  <!--Loading Section 2-->
+  <section id="section2" class="section2">
+    <h1 class="title">We're helping families get up to <span>$50,000</span> in Final Expense benefits. </h1>
+    <img src="loadingCartoon.png" class="loadingCartoon" alt="Man and woman under an umbrella" width="228"
+      height="247" />
+    <button class="start" onclick="displayChat()">Start Now</button>
+  </section>
+  <!--Chat Section-->
+  <section id="chat" class="chat" style="display: none;">
+    <p class="online"></p>
+    <section id="step1" class="step" style="display: none;">
+      <p class="chatText intro" style="display: none;"></p>
+      <p class="chatText" style="display: none;">Want to see if you qualify for up to <span>$50,000</span> in funeral
+        benefits? </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step1Buttons" style="display: none;">
+      <button class="greenButton" onclick="displayMessages('step2', 2, this);"> Yes </button>
+    </div>
+    <section id="step2" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> Okay, let me ask you a couple questions. </p>
+      <p class="chatText" style="display: none;">What is your age range?</p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step2Buttons" style="display: none;">
+      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> 40-60 </button>
+      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> 61-70 </button>
+      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> 71-90 </button>
+    </div>
+    <section id="step3" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> Do you have any existing funeral or life insurance? </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step3Buttons" style="display: none;">
+      <button class="greenButton" onclick="displayMessages('step4', 2, this);"> Yes </button>
+      <button class="greenButton outline" onclick="displayMessages('step4', 2, this);"> No </button>
+    </div>
+    <section id="step4" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> 🎉 Great news! You pre-qualify for $50,000 of final expense coverage.
+      </p>
+      <p class="chatText" style="display: none;"> 👉 Speak with a licensed agent to grab your benefits now </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons col" id="step4Buttons" style="display: none;">
+      <div class="call-description">
+        <p>This quick call includes:</p>
+        <ul class="call-list">
+          <li>We confirm your <span>eligibility</span> ✅ </li>
+          <li> We explain your options in <br />
+            <span>2 minutes</span> 🕛
+          </li>
+          <li>
+            <span>No obligation</span>, just answers 🤝
+          </li>
+        </ul>
+      </div>
+      <p class="center-icon spots">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <circle cx="6" cy="6" r="6" fill="#EA4335"></circle>
+        </svg> Just 3 spots left — don’t miss out
+      </p>
+      <a href="tel:+1234567890" class="greenButton">
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+          <path
+            d="M-0.00320816 5.6999C-0.00320816 12.0666 8.43846 20.4999 14.7968 20.4999C16.1885 20.4999 17.4885 19.9749 18.4468 19.0166L19.2801 18.0582C20.2468 17.0916 20.2468 15.4582 19.2385 14.4499C19.2135 14.4249 17.2051 12.8832 17.2051 12.8832C16.2051 11.9332 14.6301 11.9332 13.6385 12.8832L12.4218 13.8582C9.75513 12.7249 7.86346 10.8249 6.64679 8.06657L7.61346 6.8499C8.57179 5.85824 8.57179 4.2749 7.61346 3.28324C7.61346 3.28324 6.07179 1.2749 6.04679 1.2499C5.03846 0.241569 3.40512 0.241569 2.39679 1.2499L1.52179 2.00824C0.521791 2.9999 -0.00320816 4.2999 -0.00320816 5.69157V5.6999Z"
+            fill="white"></path>
+        </svg> Yes, Claim my offer! </a>
+      <button class="greenButton outline later" onclick="displayMessages('step5', 3, this);"> No, I’ll miss this
+        opportunity </button>
+      <p class="trusted-text">
+        <span class="center-icon">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path
+              d="M7.5 1.34668L2.25 3.25604V7.49988C2.25 12.2953 7.34448 13.5997 7.39575 13.6125L7.5 13.6377L7.60425 13.6125C7.65552 13.5997 12.75 12.2953 12.75 7.49988V3.25604L7.5 1.34668ZM6.625 9.86853L4.56567 7.8092L5.18433 7.19055L6.625 8.63123L9.81567 5.44055L10.4343 6.0592L6.625 9.86853Z"
+              fill="#00C105"></path>
+          </svg> Trusted by </span>
+        <span class="highlight">thousands</span>
+      </p>
+    </div>
+    <section id="step5" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> No worries! You can reach us anytime at </p>
+      <a href="tel:+1234567890" style="display: none;" class="numLink chatText">+1 (234) 456-7890</a>
+      <p class="chatText" style="display: none;"> We’re available 7 days a week. Talk soon! </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons col" id="step5Buttons" style="display: none;">
+      <div class="chatEnded">
+        <div></div>
+        <p>Chat ended</p>
+        <div></div>
+      </div>
+      <a href="https://www.google.com/" class="orangeButton">Visit our website</a>
+      <img src="logos.png" alt="Trustpilot 4.8/5 rating and BBB A rating" width="375" height="41" />
+    </div>
+  </section>
+
+  <!-- Custom JS Script -->
+  <script src="main_script.js"></script>
+
+</body>
+
+</html>
