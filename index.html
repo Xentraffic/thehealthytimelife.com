@@ -154,35 +154,21 @@
   <script src="main_script.js"></script>
   <!-- Ringba JS Script -->
   <script src=//b-js.ringba.com/CAf71336a9b1aa4a1a8c5b17f901697e17 async></script>
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel Script -->
   <script>
-    data: [
-      {
-        event_name: "Purchase",
-        event_time: 1745860855,
-        action_source: "website",
-        user_data: {
-          em: [
-            "7b17fb0bd173f625b58636fb796407c22b3d16fc78302d79f0fd30c2fc2fc068"
-          ],
-          ph: [
-            null
-          ]
-        },
-        attribution_data: {
-          attribution_share: "0.3"
-        },
-        custom_data: {
-          currency: "USD",
-          value: "142.52"
-        },
-        original_event_data: {
-          event_name: "Purchase",
-          event_time: 1745860855
-        }
-      }
-    ]
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2075256722968628');
+    fbq('track', 'PageView');
   </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2075256722968628&ev=PageView&noscript=1"/>
+  </noscript>
 </body>
 
 </html>
