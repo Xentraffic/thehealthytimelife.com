@@ -152,6 +152,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   margin: 0px;
+  text-align: center;
 }
 
 .section2 .title span {
@@ -159,7 +160,7 @@ body {
 }
 
 .loadingCartoon {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .section2 .start {
@@ -296,6 +297,13 @@ body {
   flex-direction: column;
   gap: 16px;
   padding-bottom: 24px;
+}
+
+.buttons-col {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
 }
 
 .trusted-text {
@@ -514,14 +522,15 @@ a.greenButton {
 
 @keyframes pulse {
   0% {
+    opacity: 1;
     transform: scale(1);
   }
-
   50% {
-    transform: scale(1.05);
+    opacity: 0.2;
+    transform: scale(1.25);
   }
-
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -534,4 +543,23 @@ button {
   width: 45px;
   position: relative;
   top: -3px;
+}
+
+.title {
+  color: #3b8057;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+  text-align: center;
+}
+
+#step2Title {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+#step2Buttons {
+  position: static;
+  margin-top: 180px;
 }

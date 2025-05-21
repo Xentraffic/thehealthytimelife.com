@@ -39,6 +39,9 @@ async function displayMessages(stepNum, numMessages, element) {
   step.style.display = "block";
   if (element) {
     element.parentElement.style.display = "none";
+    if (element.parentElement.id === "step2Buttons") {
+      document.getElementById("step2Title").style.display = "none";
+    }
     const newDiv = document.createElement("div");
     newDiv.innerHTML = `<p>${element.innerHTML}</p><img
           src="blankProfile.png"
@@ -78,6 +81,9 @@ async function displayMessages(stepNum, numMessages, element) {
     });
   } else {
     buttons.style.display = "flex";
+    if (stepNum === "step2") {
+      document.getElementById("step2Title").style.display = "block";
+    }
   }
 }
 
@@ -107,7 +113,7 @@ async function displayChat() {
         </svg>
         ${name} is online`;
   const intro = document.querySelector(".intro");
-  intro.innerHTML = `Hi 👋 I'm ${name} from <span>Final Expense Benefits.</span>`;
+  intro.innerHTML = `Hi 👋 I'm ${name} from <span>Essential Life Closure Benefits.</span>`;
 
   const pics = document.querySelectorAll(".profileLeft");
   pics.forEach((pic) => {
