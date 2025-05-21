@@ -18,15 +18,10 @@
   <h1 class="feb">Essential Life Closure Benefits <span></span></h1>
   <!--Navbar-->
   <section class="nav">
-    <a href="tel:+18338091746" class="callButton">
-      <p class="text">Need support?</p>
-      <p class="number">
-        <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
-          <path
-            d="M12.9399 13.4272L13.4716 12.8154C13.81 12.4765 14 12.0176 14 11.5391C14 11.0606 13.81 10.6016 13.4716 10.2627C13.4535 10.2447 12.0478 9.16514 12.0478 9.16514C11.7104 8.84457 11.2623 8.66606 10.7965 8.66672C10.3307 8.66737 9.8831 8.84712 9.54663 9.16864L8.43306 10.1053C7.52408 9.72974 6.69837 9.17865 6.00336 8.48367C5.30834 7.78869 4.75771 6.9635 4.38308 6.05548L5.31787 4.94739C5.64021 4.61156 5.8205 4.16466 5.82126 3.69956C5.82202 3.23447 5.6432 2.78698 5.32196 2.4501C5.32196 2.4501 4.23936 1.04866 4.22125 1.03058C3.88791 0.69567 3.43595 0.505122 2.96303 0.500102C2.49011 0.495082 2.0342 0.675994 1.69381 1.00375L1.02192 1.58696C-2.94743 6.18379 5.60006 14.6502 10.357 14.498C10.8373 14.5008 11.3134 14.4074 11.757 14.2235C12.2006 14.0396 12.6029 13.7689 12.9399 13.4272Z"
-            fill="#4B4B4B"></path>
-        </svg> +1 (833) 809-1746
-      </p>
+    <a href="tel:+18338091746" class="callButton" style="text-decoration: none;">
+      <button class="start" style="width: 160px; font-size: 15px; padding: 6px 16px;">
+        <img src="phone.gif" alt="phone icon" width="20" height="21" style="vertical-align: middle;"> Call now!
+      </button>
     </a>
   </section>
   <!-- Loading Section 1-->
@@ -41,9 +36,16 @@
   </section>
   <!--Loading Section 2-->
   <section id="section2" class="section2">
-    <h1 class="title">We're helping families get up to <span>$50,000</span> in Essential Life Closure Benefits. </h1>
+    <h1 class="title">You could qualify for up to <span>$50,000</span> to help cover end-of-life expenses—see if you’re eligible today.</h1>
     <img src="loadingCartoon.png" class="loadingCartoon" alt="Man and woman under an umbrella" width="228"
       height="247" />
+    <p class="program-description styled-description">
+
+      <span>
+        <strong>This program helps families</strong> cover <span style="color:#2e7d32;">funeral costs</span>, <span style="color:#2e7d32;">medical bills</span>, and other end-of-life expenses.<br>
+        <span style="color:#c0392b; font-weight:600;">No medical exam required.</span> Fast approval for qualified applicants.
+      </span>
+    </p>
     <p class="title">Leave a Legacy of Love, Not Bills.</p>
     <button class="start" onclick="displayChat()">Start Now</button>
   </section>
@@ -67,18 +69,69 @@
     </div>
     <section id="step2" class="step" style="display: none;">
       <p class="chatText" style="display: none;"> Okay, let me ask you a couple questions. </p>
-      <p class="chatText" style="display: none;">What is your age range?</p>
+      <p class="chatText" style="display: none;">Do you have between 50-79 years old?</p>
       <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
       <div class="chatBubbles">
         <img src="loading.gif" class="loadingMsg" />
       </div>
     </section>
     <div class="buttons" id="step2Buttons" style="display: none;">
-      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> Between 40-60 </button>
-      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> Between 61-70 </button>
-      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> Between 71-90 </button>
+      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> Yes </button>
+      <button class="greenButton outline" onclick="displayMessages('step3a', 1, this);"> No </button>
     </div>
-    <p class="title" id="step2Title" style="display: none;">Honor Your Life with a Plan That Cares</p>
+    <p class="title" id="step2Title" style="display: none;">Honor Your Life with a Plan That Cares!</p>
+    <section id="step3a" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> Do you have any existing insurance coverage? </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step3aButtons" style="display: none;">
+      <button class="greenButton" onclick="displayMessages('step3b', 1, this);"> Yes </button>
+      <button class="greenButton outline" onclick="displayMessages('step3c', 1, this);"> No </button>
+    </div>
+    <section id="step3b" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> Do you have any life insurance? </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step3bButtons" style="display: none;">
+      <button class="greenButton" onclick="displayMessages('step3d', 1, this);"> Yes </button>
+      <button class="greenButton outline" onclick="displayMessages('step3e', 1, this);"> No </button>
+    </div>
+    <section id="step3c" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> You're qualified for life insurance! Call this number: +1 (833) 630-1998 </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step3cButtons" style="display: none;">
+      <a href="tel:+18336301998" class="greenButton">
+        <img src="phone.gif" alt="phone icon" width="20" height="21" style="vertical-align: middle;"> Call now! </a>
+    </div>
+    <section id="step3d" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> Unfortunately, you're not qualified for life insurance. </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+
+    <section id="step3e" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> You're qualified for life insurance! Call this number: +1 (833) 630-1998 </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step3eButtons" style="display: none;">
+      <a href="tel:+18336301998" class="greenButton">
+        <img src="phone.gif" alt="phone icon" width="20" height="21" style="vertical-align: middle;"> Call now! </a>
+    </div>
     <section id="step3" class="step" style="display: none;">
       <p class="chatText" style="display: none;"> Do you have any existing funeral or life insurance? </p>
       <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
@@ -91,7 +144,7 @@
       <button class="greenButton" onclick="displayMessages('step4', 2, this);"> No </button>
     </div>
     <section id="step4" class="step" style="display: none;">
-      <p class="chatText" style="display: none;"> 🎉 Great news! You pre-qualify for $50,000 of final expense coverage.
+      <p class="chatText" style="display: none;"> 🎉 Great news! You might be qualified for $50,000 of final expense coverage.
       </p>
       <p class="chatText" style="display: none;"> 👉 Speak with a licensed agent to grab your benefits now </p>
       <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
@@ -106,14 +159,10 @@
         <svg width="18" height="18" viewBox="0 0 12 12" fill="none" style="vertical-align: middle;">
           <circle class="pulse" cx="5" cy="5" r="5" fill="#C0392B"></circle>
         </svg>
-        <span id="spotsLeft">Just 9 spots left</span> — don't miss out
+        <span id="spotsLeft">Just 3 spots left</span> — don't miss out
       </p>
       <a href="tel:+18338091746" class="greenButton">
-        <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
-          <path
-            d="M-0.00320816 5.6999C-0.00320816 12.0666 8.43846 20.4999 14.7968 20.4999C16.1885 20.4999 17.4885 19.9749 18.4468 19.0166L19.2801 18.0582C20.2468 17.0916 20.2468 15.4582 19.2385 14.4499C19.2135 14.4249 17.2051 12.8832 17.2051 12.8832C16.2051 11.9332 14.6301 11.9332 13.6385 12.8832L12.4218 13.8582C9.75513 12.7249 7.86346 10.8249 6.64679 8.06657L7.61346 6.8499C8.57179 5.85824 8.57179 4.2749 7.61346 3.28324C7.61346 3.28324 6.07179 1.2749 6.04679 1.2499C5.03846 0.241569 3.40512 0.241569 2.39679 1.2499L1.52179 2.00824C0.521791 2.9999 -0.00320816 4.2999 -0.00320816 5.69157V5.6999Z"
-            fill="white"></path>
-        </svg> Call now! </a>
+        <img src="phone.gif" alt="phone icon" width="20" height="21" style="vertical-align: middle;"> Call now! </a>
       <button class="greenButton outline later" onclick="displayMessages('step5', 3, this);"> No, I'll miss this
         opportunity </button>
       <p class="trusted-text">
