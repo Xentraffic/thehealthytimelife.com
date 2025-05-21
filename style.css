@@ -563,3 +563,15 @@ button {
   position: static;
   margin-top: 180px;
 }
+
+@media (max-width: 600px) {
+  .finances {
+    max-width: 40vw;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 4vw;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
