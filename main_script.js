@@ -77,7 +77,8 @@ async function displayMessages(stepNum, numMessages, element) {
     chat.classList.add("extra-padding");
     buttons.style.display = "flex";
     buttons.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
+      block: "center"
     });
   } else {
     buttons.style.display = "flex";
