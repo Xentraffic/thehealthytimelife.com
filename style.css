@@ -574,4 +574,14 @@ button {
   .title {
     font-size: 18px;
   }
+  .buttons,
+  .buttons.col {
+    position: static !important;
+    left: unset !important;
+    right: unset !important;
+    padding-bottom: 0 !important;
+    margin-top: 86px !important;
+    gap: 8px !important;
+    bottom: unset !important;
+  }
 }
