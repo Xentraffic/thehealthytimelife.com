@@ -106,7 +106,7 @@
         <svg width="18" height="18" viewBox="0 0 12 12" fill="none" style="vertical-align: middle;">
           <circle class="pulse" cx="5" cy="5" r="5" fill="#C0392B"></circle>
         </svg>
-        Just 3 spots left — don’t miss out
+        <span id="spotsLeft">Just 9 spots left</span> — don't miss out
       </p>
       <a href="tel:+18338091746" class="greenButton">
         <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
@@ -114,7 +114,7 @@
             d="M-0.00320816 5.6999C-0.00320816 12.0666 8.43846 20.4999 14.7968 20.4999C16.1885 20.4999 17.4885 19.9749 18.4468 19.0166L19.2801 18.0582C20.2468 17.0916 20.2468 15.4582 19.2385 14.4499C19.2135 14.4249 17.2051 12.8832 17.2051 12.8832C16.2051 11.9332 14.6301 11.9332 13.6385 12.8832L12.4218 13.8582C9.75513 12.7249 7.86346 10.8249 6.64679 8.06657L7.61346 6.8499C8.57179 5.85824 8.57179 4.2749 7.61346 3.28324C7.61346 3.28324 6.07179 1.2749 6.04679 1.2499C5.03846 0.241569 3.40512 0.241569 2.39679 1.2499L1.52179 2.00824C0.521791 2.9999 -0.00320816 4.2999 -0.00320816 5.69157V5.6999Z"
             fill="white"></path>
         </svg> Call now! </a>
-      <button class="greenButton outline later" onclick="displayMessages('step5', 3, this);"> No, I’ll miss this
+      <button class="greenButton outline later" onclick="displayMessages('step5', 3, this);"> No, I'll miss this
         opportunity </button>
       <p class="trusted-text">
         <span class="center-icon">
@@ -129,7 +129,7 @@
     <section id="step5" class="step" style="display: none;">
       <p class="chatText" style="display: none;"> No worries! You can reach us anytime at </p>
       <a href="tel:+18338091746" style="display: none;" class="numLink chatText">+1 (833) 809-1746</a>
-      <p class="chatText" style="display: none;"> We’re available 7 days a week. Talk soon! </p>
+      <p class="chatText" style="display: none;"> We're available 7 days a week. Talk soon! </p>
       <img src="blankProfile.png" class="profileLeft" alt="Profile Pic" height="32" width="32" />
       <div class="chatBubbles">
         <img src="loading.gif" class="loadingMsg" />
@@ -148,6 +148,23 @@
 
   <!-- Custom JS Script -->
   <script src="main_script.js"></script>
+  <script>
+    // Initialize spots counter
+    document.addEventListener('DOMContentLoaded', function() {
+      let spotsLeft = localStorage.getItem('spotsLeft');
+      if (!spotsLeft) {
+        spotsLeft = 9;
+        localStorage.setItem('spotsLeft', spotsLeft);
+      } else {
+        spotsLeft = parseInt(spotsLeft);
+        if (spotsLeft > 1) {
+          spotsLeft--;
+          localStorage.setItem('spotsLeft', spotsLeft);
+        }
+      }
+      document.getElementById('spotsLeft').textContent = `Just ${spotsLeft} spots left`;
+    });
+  </script>
   <!-- Ringba JS Script -->
   <script src=//b-js.ringba.com/CAf71336a9b1aa4a1a8c5b17f901697e17 async></script>
   <!-- Meta Pixel Script -->
