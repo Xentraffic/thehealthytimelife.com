@@ -1,0 +1,186 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get any lander cleaned, visit thelanders.club -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beneficios Esenciales para el Cierre de Vida</title>
+  <link rel="shortcut icon" href="loadingCartoon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1 class="feb">Beneficios Esenciales para el Cierre de Vida <span></span></h1>
+  <!--Navbar-->
+  <section class="nav">
+    <a class="callButton start" style="width: 160px; font-size: 15px; padding: 6px 16px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+      <img src="phone.gif" alt="icono de teléfono" width="20" height="21" style="vertical-align: middle; margin-right: 8px;"> ¡Llama ahora!
+    </a>
+  </section>
+  <!-- Loading Section 1-->
+  <section id="section1" class="section1">
+    <div class="green"></div>
+    <div class="centeredDiv">
+      <img src="load.gif" style="display: block; max-width: 70px; margin: 20px auto;" />
+      <p class="loadMessage">Cargando beneficios confiables para ti...</p>
+      <img src="logos.png" alt="Trustpilot 4.8/5 calificación y BBB A calificación" width="375" height="41" />
+    </div>
+    <div class="loadingFooter"></div>
+  </section>
+  <!--Loading Section 2-->
+  <section id="section2" class="section2">
+    <h1 class="title">Podrías calificar para hasta <span>$50,000</span> para ayudar a cubrir gastos de final de vida—verifica si eres elegible hoy.</h1>
+    <img src="loadingCartoon.png" class="loadingCartoon" alt="Hombre y mujer bajo un paraguas" width="228"
+      height="247" />
+      <p class="program-description styled-description">
+        <span>
+          <strong>Este programa ayuda a las familias</strong> a cubrir <span style="color:#2e7d32;">gastos funerarios</span>, <span style="color:#2e7d32;">facturas médicas</span>, y otros gastos de final de vida.<br>
+          <span style="color:#c0392b; font-weight:600;">No requiere examen médico.</span> Aprobación rápida para solicitantes calificados.
+        </span>
+      </p>
+    <button class="start" onclick="displayChat()">Comenzar Ahora</button>
+  </section>
+  <!--Chat Section-->
+  <section id="chat" class="chat" style="display: none;">
+    <p class="online"></p>
+    <section id="step1" class="step" style="display: none;">
+      <p class="chatText intro" style="display: none;"></p>
+      <p class="chatText" style="display: none;">¿Quieres ver si calificas para hasta <span>$50,000</span> en beneficios funerarios?</p>
+      <img src="blankProfile.png" class="profileLeft" alt="Foto de Perfil" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons buttons-col" id="step1Buttons" style="display: none;">
+      <img src="FinalExpenseInsurance.png" class="finances" alt="Hombre y mujer bajo un paraguas" width="228"
+      height="247" />
+      <p class="title">Tranquilidad para Ti. Alivio Financiero para Ellos.</p>
+      <button class="greenButton" onclick="displayMessages('step2', 2, this);"> Sí </button>
+    </div>
+    <section id="step2" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> Bien, déjame hacerte algunas preguntas. </p>
+      <p class="chatText" style="display: none;">¿Tienes menos de 79 años?</p>
+      <img src="blankProfile.png" class="profileLeft" alt="Foto de Perfil" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step2Buttons" style="display: none;">
+      <button class="greenButton" onclick="displayMessages('step3', 1, this);"> Sí </button>
+      <button class="greenButton outline" onclick="displayMessages('step3No', 1, this);"> No </button>
+    </div>
+    <p class="title" id="step2Title" style="display: none;">¡Honra tu Vida con un Plan que se Preocupa!</p>
+    <section id="step3" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> ¿Tienes algún seguro funerario o de vida existente? </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Foto de Perfil" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons" id="step3Buttons" style="display: none;">
+      <button class="greenButton outline" onclick="displayMessages('step4', 2, this);"> Sí </button>
+      <button class="greenButton" onclick="displayMessages('step4', 2, this);"> No </button>
+    </div>
+    <section id="step4" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> 🎉 ¡Buenas noticias! Podrías calificar para $50,000 de cobertura de gastos finales.
+      </p>
+      <p class="chatText" style="display: none;"> 👉 Habla con un agente autorizado para obtener tus beneficios ahora </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Foto de Perfil" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons col" id="step4Buttons" style="display: none;">
+      <img src="QuickCallIncludes.png" class="loadingCartoon" alt="Hombre y mujer bajo un paraguas" width="300"
+      height="325" />
+      <p class="center-icon spots">
+        <svg width="18" height="18" viewBox="0 0 12 12" fill="none" style="vertical-align: middle;">
+          <circle class="pulse" cx="5" cy="5" r="5" fill="#C0392B"></circle>
+        </svg>
+        <span id="spotsLeft">Solo quedan 3 lugares</span> — no te lo pierdas
+      </p>
+      <a class="greenButton">
+        <img src="phone.gif" alt="icono de teléfono" width="20" height="21" style="vertical-align: middle; margin-right: 8px;"> ¡Llama ahora!
+      </a>
+      <button class="greenButton outline later" onclick="displayMessages('step5', 3, this);"> No, perderé esta oportunidad </button>
+      <p class="trusted-text">
+        <span class="center-icon">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path
+              d="M7.5 1.34668L2.25 3.25604V7.49988C2.25 12.2953 7.34448 13.5997 7.39575 13.6125L7.5 13.6377L7.60425 13.6125C7.65552 13.5997 12.75 12.2953 12.75 7.49988V3.25604L7.5 1.34668ZM6.625 9.86853L4.56567 7.8092L5.18433 7.19055L6.625 8.63123L9.81567 5.44055L10.4343 6.0592L6.625 9.86853Z"
+              fill="#00C105"></path>
+          </svg> Confiado por </span>
+        <span class="highlight">miles</span>
+      </p>
+    </div>
+    <section id="step5" class="step" style="display: none;">
+      <p class="chatText" style="display: none;"> ¡No hay problema! Puedes contactarnos en cualquier momento al </p>
+      <a href="tel:+18338091746" style="display: none;" class="numLink chatText">+1 (833) 809-1746</a>
+      <p class="chatText" style="display: none;"> Estamos disponibles 7 días a la semana. ¡Hasta pronto! </p>
+      <img src="blankProfile.png" class="profileLeft" alt="Foto de Perfil" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+    <div class="buttons col" id="step5Buttons" style="display: none;">
+      <div class="chatEnded">
+        <div></div>
+        <p>Chat finalizado</p>
+        <div></div>
+      </div>
+      <a href="https://www.google.com/" class="orangeButton">Visita nuestro sitio web</a>
+      <img src="logos.png" alt="Trustpilot 4.8/5 calificación y BBB A calificación" width="375" height="41" />
+    </div>
+    <section id="step3No" class="step" style="display: none;">
+      <p class="chatText" style="display: none;">Desafortunadamente, no has sido calificado para este beneficio.</p>
+      <img src="blankProfile.png" class="profileLeft" alt="Foto de Perfil" height="32" width="32" />
+      <div class="chatBubbles">
+        <img src="loading.gif" class="loadingMsg" />
+      </div>
+    </section>
+  </section>
+
+  <!-- Custom JS Script -->
+  <script src="main_script.js"></script>
+  <script>
+    // Initialize spots counter
+    document.addEventListener('DOMContentLoaded', function() {
+      let spotsLeft = localStorage.getItem('spotsLeft');
+      if (!spotsLeft) {
+        spotsLeft = 3;
+        localStorage.setItem('spotsLeft', spotsLeft);
+      } else {
+        spotsLeft = parseInt(spotsLeft);
+        if (spotsLeft > 1) {
+          spotsLeft--;
+          localStorage.setItem('spotsLeft', spotsLeft);
+        }
+      }
+      document.getElementById('spotsLeft').textContent = `Solo quedan ${spotsLeft} lugares`;
+    });
+  </script>
+  <!-- Ringba JS Script -->
+
+  <!-- Meta Pixel Script -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2075256722968628');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2075256722968628&ev=PageView&noscript=1"/>
+  </noscript>
+</body>
+
+</html>
