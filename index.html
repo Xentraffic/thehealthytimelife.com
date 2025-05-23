@@ -160,9 +160,12 @@
         </svg>
         <span id="spotsLeft">Just 3 spots left</span> — don't miss out
       </p>
-      <a href="tel:+18338091746" class="greenButton" style="display: flex; align-items: center; justify-content: center;">
-        <img src="phone.gif" alt="phone icon" width="20" height="21" style="vertical-align: middle; margin-right: 8px;"> Call now!
-      </a>
+      <div class="phone-button-wrapper" style="position: relative; display: flex; justify-content: center; width: 100%;">
+        <button class="invisible-tracker" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; z-index: 2; cursor: pointer;" onclick="trackAndCall(event)"></button>
+        <a href="tel:+18338091746" class="greenButton" style="display: flex; align-items: center; justify-content: center; padding: 15px 30px; font-size: 18px; position: relative; z-index: 1; min-width: 200px;">
+          <img src="phone.gif" alt="phone icon" width="20" height="21" style="vertical-align: middle; margin-right: 8px;"> Call now!
+        </a>
+      </div>
       <p class="trusted-text">
         <span class="center-icon">
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -229,6 +232,18 @@
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2075256722968628&ev=PageView&noscript=1"/>
   </noscript>
+  <script>
+    function trackAndCall(event) {
+      // Prevent the default button behavior
+      event.preventDefault();
+
+      // Get the phone link
+      const phoneLink = event.target.nextElementSibling;
+
+      // Simulate a click on the actual phone link to trigger Ringba
+      phoneLink.click();
+    }
+  </script>
 </body>
 
 </html>
