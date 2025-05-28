@@ -31,6 +31,45 @@
       document.querySelector('.no-btn').addEventListener('click', function () {
         switchSection(questionBox, notQualifiedBox);
       });
+
+      // Handle email form submission
+      document.getElementById('emailForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById('emailInput').value;
+        const submitBtn = document.querySelector('.submit-email-btn');
+        const successMsg = document.getElementById('emailSuccess');
+
+        // Disable button and show loading
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        // Replace this URL with your Google Apps Script Web App URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx8XIvGGV1Pnh0ZN0TIHDkymqkzcOICSodjAK7t9uVxHu-cBXE7dJ-WZCqWsT-ThVGycA/exec';
+
+        fetch(scriptURL, {
+          method: 'POST',
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'text/plain'
+          },
+          body: JSON.stringify({ email })
+        })
+
+        .then(response => {
+          // Show success message
+          document.getElementById('emailForm').style.display = 'none';
+          successMsg.style.display = 'block';
+          document.getElementById('emailInput').value = '';
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          // Reset button on error
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Notify Me';
+          alert('There was an error. Please try again.');
+        });
+      });
     });
   </script>
 
@@ -73,6 +112,14 @@
         <p class="not-qualified-subtext">
           Based on your response, it appears you are not currently eligible for Final Expense coverage through this program.
         </p>
+        <div class="email-form">
+          <p class="email-prompt">However, leave your email to be notified when new programs become available:</p>
+          <form id="emailForm">
+            <input type="email" id="emailInput" placeholder="Enter your email address" required>
+            <button type="submit" class="submit-email-btn">Notify Me</button>
+          </form>
+          <p class="email-success" id="emailSuccess" style="display: none;">✅ Thank you! We'll notify you of new opportunities.</p>
+        </div>
       </div>
     </div>
 
