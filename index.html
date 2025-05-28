@@ -58,7 +58,10 @@
           Based on your age, you are eligible to receive free information about affordable Final Expense insurance options. 
         </p>
         <p class="qualified-urgency">
-          Don’t wait — spots are limited and filling up fast. Call now to secure your benefits!
+          <svg width="18" height="18" viewBox="0 0 12 12" fill="none" style="vertical-align: middle;">
+            <circle class="pulse" cx="5" cy="5" r="5" fill="#C0392B"></circle>
+          </svg>
+          Don't wait — <span id="spotsLeft">just 3 spots are left</span>. Call now to secure your benefits!
         </p>
         <a href="tel:+18338091746" class="call-now-btn">
           <span class="call-icon">📞</span> Call Now
@@ -84,6 +87,28 @@
       </div>
     </div>
 
+    <script>
+      // Initialize spots counter
+      document.addEventListener('DOMContentLoaded', function() {
+        let spotsLeft = localStorage.getItem('spotsLeft');
+        if (!spotsLeft) {
+          spotsLeft = 3;
+          localStorage.setItem('spotsLeft', spotsLeft);
+        } else {
+          spotsLeft = parseInt(spotsLeft);
+          if (spotsLeft > 1) {
+            spotsLeft--;
+            localStorage.setItem('spotsLeft', spotsLeft);
+          }
+        }
+
+        // Update the spots left text when the qualified box is shown
+        const spotsElement = document.getElementById('spotsLeft');
+        if (spotsElement) {
+          spotsElement.textContent = `just ${spotsLeft} spots are left`;
+        }
+      });
+    </script>
   <!-- Ringba JS Script -->
   <script src="//b-js.ringba.com/CAf71336a9b1aa4a1a8c5b17f901697e17" async></script>
   <!-- Meta Pixel Script -->

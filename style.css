@@ -271,6 +271,26 @@ header {
     50% { transform: rotate(1deg); }
     60%, 100% { transform: rotate(0deg); }
   }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
   .dynamic-container {
     position: relative;
     width: 100%;
@@ -420,6 +440,12 @@ header {
 }
 
 @media (max-width: 480px) {
+  body, html {
+    background: url('./Images/mobile-background.jpg') no-repeat center top fixed;
+    background-size: cover;
+    background-position-y: 70%;
+  }
+  
   .qualified-box {
     max-width: 90vw;
     width: 100%;
