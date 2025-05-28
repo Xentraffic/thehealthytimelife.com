@@ -510,6 +510,7 @@ header {
   }
   .reassurance-box {
     margin-top: -110px;
+    font-size: 0.9em;
   }
   .button-group {
     display: flex;
