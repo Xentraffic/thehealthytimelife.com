@@ -559,14 +559,22 @@ header {
     margin-top: 1px;
   }
   .not-qualified-box {
-    margin-top: 100px;
+    margin-top: 20px;
+  }
+  .not-qualified-message {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .not-qualified-subtext {
+    font-size: 1em;
+    margin-bottom: 15px;
   }
   .email-form {
     margin-top: 20px;
   }
   
   .email-prompt {
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-bottom: 15px;
   }
   
