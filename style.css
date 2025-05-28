@@ -433,7 +433,7 @@ header {
     margin-top: 100px;
   }
   .reassurance-box {
-    margin-top: -80px;
+    margin-top: -100px;
   }
   .button-group {
     display: flex;
@@ -481,5 +481,8 @@ header {
     font-size: 16px;
     line-height: 14px;
     margin-top: 1px;
+  }
+  .not-qualified-box {
+    margin-top: 100px;
   }
 }
