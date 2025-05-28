@@ -100,7 +100,7 @@
           <svg width="18" height="18" viewBox="0 0 12 12" fill="none" style="vertical-align: middle;">
             <circle class="pulse" cx="5" cy="5" r="5" fill="#C0392B"></circle>
           </svg>
-          Don't wait — <span id="spotsLeft">just 3 spots are left</span>. Call now to secure your benefits!
+          Don't wait — <span id="spotsLeft">just 3 spots left</span>. Call now to secure your benefits!
         </p>
         <a href="tel:+18338091746" class="call-now-btn">
           <span class="call-icon">📞</span> Call Now
@@ -152,7 +152,8 @@
         // Update the spots left text when the qualified box is shown
         const spotsElement = document.getElementById('spotsLeft');
         if (spotsElement) {
-          spotsElement.textContent = `just ${spotsLeft} spots are left`;
+          const spotText = spotsLeft === 1 ? 'spot' : 'spots';
+          spotsElement.textContent = `just ${spotsLeft} ${spotText} left`;
         }
       });
     </script>
