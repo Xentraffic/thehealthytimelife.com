@@ -88,7 +88,7 @@ header {
     padding: 60px;
   }
 
-  .question-box {
+  .question-box, .second-question-box {
     background: rgba(255, 255, 255, 0.772);
     padding: 100px;
     border-radius: 32px;
@@ -122,10 +122,10 @@ header {
     font-weight: bold;
   }
   
-  .yes-btn { background-color: #1edf31; color: white; }
-  .no-btn { background-color: #ff3131; color: white; }
-  .yes-btn:hover { background-color: #19a527; }
-  .no-btn:hover { background-color: #cc5656; }
+  .yes-btn, .no-insurance-btn { background-color: #1edf31; color: white; }
+  .no-btn, .yes-insurance-btn { background-color: #ff3131; color: white; }
+  .yes-btn:hover, .yes-insurance-btn:hover, .no-insurance-btn:hover { background-color: #19a527; }
+  .no-btn:hover, .yes-insurance-btn:hover { background-color: #cc5656; }
   
   .trust-indicator {
     margin: -10px auto -33px auto;
@@ -391,7 +391,7 @@ header {
   }
 
 
-  .question-box, .qualified-box, .not-qualified-box {
+  .question-box, .second-question-box, .qualified-box, .not-qualified-box {
     padding: 10px 2px;
   }
   .question {
@@ -455,7 +455,7 @@ header {
     margin-right: 50px;
   }
 
-  .question-box {
+  .question-box, .second-question-box {
     padding: 60px;
     max-width: 580px;
   }
@@ -502,7 +502,7 @@ header {
     padding: 10px;
     margin-top: 10px;
   }
-  .question-box {
+  .question-box, .second-question-box {
     max-width: 90vw;
     width: 100%;
     padding: 20px 10px;

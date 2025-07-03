@@ -25,11 +25,19 @@
       }
 
       document.querySelector('.yes-btn').addEventListener('click', function () {
-        switchSection(questionBox, qualifiedBox);
+        switchSection(questionBox, document.querySelector('.second-question-box'));
       });
 
       document.querySelector('.no-btn').addEventListener('click', function () {
         switchSection(questionBox, notQualifiedBox);
+      });
+
+      document.querySelector('.yes-insurance-btn').addEventListener('click', function () {
+        switchSection(document.querySelector('.second-question-box'), notQualifiedBox);
+      });
+
+      document.querySelector('.no-insurance-btn').addEventListener('click', function () {
+        switchSection(document.querySelector('.second-question-box'), qualifiedBox);
       });
 
       // Email form handler
@@ -99,12 +107,20 @@
   <div class="overlay">
     <div class="dynamic-container">
       <div class="question-box fade-section show">
-        <div class="question">Are you between 50–80 years old ?</div>
+        <div class="question">Are you between 50–75 years old ?</div>
         <div class="button-group">
           <button class="yes-btn">Yes</button>
           <button class="no-btn">No</button>
         </div>
-      </div> 
+      </div>
+
+      <div class="second-question-box fade-section">
+        <div class="question">Do you have existing life insurance or Final Expense coverage?</div>
+        <div class="button-group">
+          <button class="no-insurance-btn">No</button>
+          <button class="yes-insurance-btn">Yes</button>
+        </div>
+      </div>
 
       <div class="qualified-box fade-section">
         <div class="qualified-message">
@@ -125,7 +141,7 @@
             <span class="call-icon">📞</span> Call Now
           </a>
         </div>
-      </div>    
+      </div>
 
       <div class="not-qualified-box fade-section">
         <div class="not-qualified-message">❌ We're Sorry</div>
