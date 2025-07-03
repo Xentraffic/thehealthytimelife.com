@@ -502,11 +502,17 @@ header {
     padding: 10px;
     margin-top: 10px;
   }
-  .question-box, .second-question-box {
+  .question-box {
     max-width: 90vw;
     width: 100%;
     padding: 20px 10px;
     margin-top: 80px;
+  }
+  .second-question-box {
+    max-width: 90vw;
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 20px;
   }
   .reassurance-box {
     margin-top: -150px;
